@@ -1,0 +1,5 @@
+gradio
+whisper
+torch
+transformers
+numpy
