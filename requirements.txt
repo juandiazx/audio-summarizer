@@ -2,4 +2,4 @@ gradio
 whisper
 torch
 transformers
-numpy
+protobuf

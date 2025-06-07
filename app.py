@@ -2,7 +2,6 @@ import gradio as gr
 import whisper
 import torch
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
-import numpy as np
 
 class AudioSummarizer:
     def __init__(self):
@@ -20,7 +19,7 @@ class AudioSummarizer:
             
             # Load summarization model (BART-large-cnn for quality summaries)
             print("Loading summarization model...")
-            model_name = "facebook/bart-large-cnn"
+            model_name = "google/pegasus-large"
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
             model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
             self.summarizer = pipeline(
