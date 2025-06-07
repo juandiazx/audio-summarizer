@@ -1,4 +1,4 @@
-# Audio Summarizer Pro
+# Audio Summarizer
 
 A Python application that transcribes audio files and generates text summaries using AI-powered models.
 
